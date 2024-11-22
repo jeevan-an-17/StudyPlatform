@@ -1,0 +1,63 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+  transition : opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+  position: relative;
+  margin: 15% auto;
+  width: 90%;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.modal-content video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: -20px; /* Move it slightly above the video */
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff; /* Optional: Add a background for better visibility */
+  padding: 5px;
+  border-radius: 50%; /* Optional: Make it circular */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for emphasis */
+  z-index: 10; /* Ensure it is above all other content */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.close:hover {
+  color: #f00;
+  transform: scale(1.2);
+  background-color: #f4f4f4; /* Slightly lighter background on hover */
+}
+
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+  }
+}

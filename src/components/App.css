@@ -1,0 +1,367 @@
+
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #181818;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.sign-in {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #1abc9c;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #121212;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  background-color: #1abc9c;
+  color: #ffffff;
+}
+
+/* Page Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.container h1, .container h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.container p {
+  margin-top: 10px;
+}
+
+
+.main-content, .sidebar {
+  background-color: #202020;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.main-content:hover, .sidebar:hover {
+  transform: translateY(-10px);
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+  position: relative;
+  color: #ffffff;
+}
+
+h1::after, h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #1abc9c;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+h1:hover::after, h2:hover::after {
+  width: 120px;
+}
+
+
+footer {
+  background-color: #0f2027;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #202020;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: #1abc9c;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #2f3640;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+  border-color: #1abc9c;
+  outline: none;
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.6);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #16a085;
+}
+
+
+.card {
+  background-color: #2f3640;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+.skill{
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap : 25px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 12px 0;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+ul li::before {
+  content: "➤";
+  color: #1abc9c;
+}
+
+
+
+footer {
+  background-color: #0f2027;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 60px;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 120px;
+  height: 5px;
+  background-color: #1abc9c;
+  transform: translateX(-50%);
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .main-content, .sidebar {
+      margin-bottom: 30px;
+  }
+}
+
+
+
+
+/* Additional styling for theme toggle and search bar */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #1abc9c;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+      /* Light theme styles */
+      .light-theme {
+        background-color: #f9f9f9;
+        color: #000;
+    }
+    .light-theme header,
+    .light-theme footer {
+        background-color: #ffffff;
+        color: #333;
+    }
+    .light-theme nav {
+        background-color: #e0e0e0; /* Lighter background for visibility */
+    }
+    .light-theme nav a {
+        color: #333; /* Darker text color for better visibility */
+    }
+    .light-theme nav a:hover {
+        background-color: #333; /* Dark background on hover */
+        color: #ffffff; /* White text on hover */
+    }
+
+
+/* video */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
