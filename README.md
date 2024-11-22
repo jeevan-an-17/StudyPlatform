@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# SkillShareU - Study Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SkillShareU is an open platform designed to facilitate learning through workshops for everyone. The platform hosts various workshops where students can learn new skills, engage in interactive sessions, and improve their knowledge in different fields. The project is built using modern web technologies including the MERN stack, React, Node.js, MongoDB, HTML5, CSS, and JavaScript.
 
-## Available Scripts
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+SkillShareU is designed as an educational platform where users can participate in workshops, track progress, and connect with instructors. It is built to provide a seamless experience using interactive UI and backend integration with React for the frontend and Node.js/MongoDB for the backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User Authentication**: Sign up and login for users to access personalized features.
+- **Workshop Management**: Users can browse and join workshops.
+- **Progress Tracking**: Keep track of progress in workshops and mark sessions as completed.
+- **Interactive UI**: Built using React for dynamic and responsive interfaces.
+- **Admin Panel**: Admins can manage workshops, user information, and session data.
+- **Search & Filter**: Easily search and filter workshops based on categories and other criteria.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, HTML5, CSS, JavaScript
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **APIs**: RESTful APIs
+- **Version Control**: Git, GitHub
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To set up the project locally, follow the steps below:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have the following installed on your system:
 
-### `npm run eject`
+- **Node.js**: [Download and install Node.js](https://nodejs.org/)
+- **MongoDB**: [Download and install MongoDB](https://www.mongodb.com/try/download/community)
+- **Git**: [Download and install Git](https://git-scm.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps to Run the Project Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Nithinks07/SkillShareU.git
+    cd SkillShareU
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install the required dependencies for both frontend and backend:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - For **frontend**:
+     ```bash
+     cd client
+     npm install
+     ```
 
-## Learn More
+   - For **backend**:
+     ```bash
+     cd ../server
+     npm install
+     ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Set up environment variables. Create a `.env` file in the root of the `server` directory and add your MongoDB connection string:
+    ```bash
+    MONGODB_URI=<Your MongoDB URI>
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start both the **frontend** and **backend** servers:
 
-### Code Splitting
+   - In one terminal window, run the backend server:
+     ```bash
+     cd server
+     npm start
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - In another terminal window, run the frontend server:
+     ```bash
+     cd client
+     npm start
+     ```
 
-### Analyzing the Bundle Size
+5. Open the application in your browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+Once the application is up and running, you can:
+- Sign up and log in as a user or admin.
+- Browse and join available workshops.
+- Track progress and mark workshops as completed.
+- Access the admin panel to manage workshops.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+We welcome contributions to improve the platform. Here’s how you can contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
