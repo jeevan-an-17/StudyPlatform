@@ -56,13 +56,12 @@ Make sure you have the following installed on your system:
 
    - For **frontend**:
      ```bash
-     cd client
      npm install
      ```
 
    - For **backend**:
      ```bash
-     cd ../server
+     cd backend
      npm install
      ```
 
@@ -75,13 +74,13 @@ Make sure you have the following installed on your system:
 
    - In one terminal window, run the backend server:
      ```bash
-     cd server
-     npm start
+     cd backend
+     node server.js
      ```
 
    - In another terminal window, run the frontend server:
      ```bash
-     cd client
+     cd src
      npm start
      ```
 
